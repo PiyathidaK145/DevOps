@@ -1,7 +1,6 @@
 Started by user piyathida kongthirat
 
-Replayed #5
-
+Obtained Jenkinsfile from git https://github.com/PiyathidaK145/DevOps.git
 [Pipeline] Start of Pipeline
 [Pipeline] node
 Running on Jenkins
@@ -21,10 +20,10 @@ Fetching upstream changes from https://github.com/PiyathidaK145/DevOps.git
  > git --version # 'git version 2.39.5'
  > git fetch --tags --force --progress -- https://github.com/PiyathidaK145/DevOps.git +refs/heads/*:refs/remotes/origin/* # timeout=10
  > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
-Checking out Revision 552480d8b2abad2f5570b1bfa228d8593c0a037e (refs/remotes/origin/main)
+Checking out Revision c49ac8bd1b0ecd0896b7504c4d3adbc44f681133 (refs/remotes/origin/main)
  > git config core.sparsecheckout # timeout=10
- > git checkout -f 552480d8b2abad2f5570b1bfa228d8593c0a037e # timeout=10
-Commit message: "update"
+ > git checkout -f c49ac8bd1b0ecd0896b7504c4d3adbc44f681133 # timeout=10
+Commit message: "ีupdate เสจแว้ววววว"
  > git rev-list --no-walk 552480d8b2abad2f5570b1bfa228d8593c0a037e # timeout=10
 [Pipeline] }
 [Pipeline] // stage
@@ -48,8 +47,8 @@ Masking supported pattern matches of $NETLIFY_AUTH_TOKEN or $NETLIFY_SITE_ID
 Jenkins seems to be running inside container 8100d3b53be672a9cafc62b48193a209b2b11a0ad061a50d54fb0d374de9a178
 but /var/jenkins_home/workspace/devopss could not be found among []
 but /var/jenkins_home/workspace/devopss@tmp could not be found among []
-$ docker run -t -d -u 1000:1000 -w /var/jenkins_home/workspace/devopss -v /var/jenkins_home/workspace/devopss:/var/jenkins_home/workspace/devopss:rw,z -v /var/jenkins_home/workspace/devopss@tmp:/var/jenkins_home/workspace/devopss@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** node:18-alpine cat
-$ docker top 0c548d0415726a93758269681501d37515383400ed529996626a54519d210470 -eo pid,comm
+$ docker run -t -d -u 1000:1000 -w /var/jenkins_home/workspace/devopss -v /var/jenkins_home/workspace/devopss:/var/jenkins_home/workspace/devopss:rw,z -v /var/jenkins_home/workspace/devopss@tmp:/var/jenkins_home/workspace/devopss@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** node:18-alpine cat
+$ docker top 46d7a1c1351ad01b12781e05726615a19749e32b520e803058ab86a80e9b8f86 -eo pid,comm
 [Pipeline] {
 [Pipeline] script
 [Pipeline] {
@@ -58,7 +57,7 @@ $ docker top 0c548d0415726a93758269681501d37515383400ed529996626a54519d210470 -e
 [Pipeline] sh
 + npm install
 
-changed 1 package, and audited 3081 packages in 13s
+changed 1 package, and audited 3081 packages in 23s
 
 455 packages are looking for funding
   run `npm fund` for details
@@ -100,8 +99,8 @@ Post stage
 [Pipeline] echo
 ✅ Build Successful! 🎉
 [Pipeline] }
-$ docker stop --time=1 0c548d0415726a93758269681501d37515383400ed529996626a54519d210470
-$ docker rm -f --volumes 0c548d0415726a93758269681501d37515383400ed529996626a54519d210470
+$ docker stop --time=1 46d7a1c1351ad01b12781e05726615a19749e32b520e803058ab86a80e9b8f86
+$ docker rm -f --volumes 46d7a1c1351ad01b12781e05726615a19749e32b520e803058ab86a80e9b8f86
 [Pipeline] // withDockerContainer
 [Pipeline] }
 [Pipeline] // stage
@@ -120,8 +119,8 @@ $ docker rm -f --volumes 0c548d0415726a93758269681501d37515383400ed529996626a545
 Jenkins seems to be running inside container 8100d3b53be672a9cafc62b48193a209b2b11a0ad061a50d54fb0d374de9a178
 but /var/jenkins_home/workspace/devopss could not be found among []
 but /var/jenkins_home/workspace/devopss@tmp could not be found among []
-$ docker run -t -d -u 1000:1000 -w /var/jenkins_home/workspace/devopss -v /var/jenkins_home/workspace/devopss:/var/jenkins_home/workspace/devopss:rw,z -v /var/jenkins_home/workspace/devopss@tmp:/var/jenkins_home/workspace/devopss@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** node:18-alpine cat
-$ docker top ef21d99c022fee166e03625ab0440c3e5089c51af3e2d073a4bf45d281c242d5 -eo pid,comm
+$ docker run -t -d -u 1000:1000 -w /var/jenkins_home/workspace/devopss -v /var/jenkins_home/workspace/devopss:/var/jenkins_home/workspace/devopss:rw,z -v /var/jenkins_home/workspace/devopss@tmp:/var/jenkins_home/workspace/devopss@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** node:18-alpine cat
+$ docker top d7e20aa3ecaf5003ee42ef44f0f962bdccc28996bedbfd90977a9cf9dc4aa467 -eo pid,comm
 [Pipeline] {
 [Pipeline] script
 [Pipeline] {
@@ -134,12 +133,12 @@ $ docker top ef21d99c022fee166e03625ab0440c3e5089c51af3e2d073a4bf45d281c242d5 -e
 > jest
 
 PASS src/App.test.js
-  ✓ renders welcome message (29 ms)
+  ✓ renders welcome message (30 ms)
 
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        1.52 s
+Time:        2.062 s
 Ran all test suites.
 [Pipeline] }
 [Pipeline] // script
@@ -147,8 +146,8 @@ Post stage
 [Pipeline] echo
 ✅ Test Successful! 🎉
 [Pipeline] }
-$ docker stop --time=1 ef21d99c022fee166e03625ab0440c3e5089c51af3e2d073a4bf45d281c242d5
-$ docker rm -f --volumes ef21d99c022fee166e03625ab0440c3e5089c51af3e2d073a4bf45d281c242d5
+$ docker stop --time=1 d7e20aa3ecaf5003ee42ef44f0f962bdccc28996bedbfd90977a9cf9dc4aa467
+$ docker rm -f --volumes d7e20aa3ecaf5003ee42ef44f0f962bdccc28996bedbfd90977a9cf9dc4aa467
 [Pipeline] // withDockerContainer
 [Pipeline] }
 [Pipeline] // stage
@@ -167,8 +166,8 @@ $ docker rm -f --volumes ef21d99c022fee166e03625ab0440c3e5089c51af3e2d073a4bf45d
 Jenkins seems to be running inside container 8100d3b53be672a9cafc62b48193a209b2b11a0ad061a50d54fb0d374de9a178
 but /var/jenkins_home/workspace/devopss could not be found among []
 but /var/jenkins_home/workspace/devopss@tmp could not be found among []
-$ docker run -t -d -u 1000:1000 -w /var/jenkins_home/workspace/devopss -v /var/jenkins_home/workspace/devopss:/var/jenkins_home/workspace/devopss:rw,z -v /var/jenkins_home/workspace/devopss@tmp:/var/jenkins_home/workspace/devopss@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** node:18-alpine cat
-$ docker top 75b41c805135e9668bb58e5f856fe85af1a6ab566529a72dcaca0e7463c57567 -eo pid,comm
+$ docker run -t -d -u 1000:1000 -w /var/jenkins_home/workspace/devopss -v /var/jenkins_home/workspace/devopss:/var/jenkins_home/workspace/devopss:rw,z -v /var/jenkins_home/workspace/devopss@tmp:/var/jenkins_home/workspace/devopss@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** node:18-alpine cat
+$ docker top f5c026bbc5c3c7572357670b2aa10650a4175a29eebc1d45a47f5406c457c306 -eo pid,comm
 [Pipeline] {
 [Pipeline] script
 [Pipeline] {
@@ -190,7 +189,7 @@ Netlify Build
 ​
 ❯ Flags
   auth: ****
-  deployId: 67eba7575fb8d1b98dc02249
+  deployId: 67ebb03df790fa0410c1aa5d
   dir: build
   open: false
   prod: true
@@ -212,16 +211,16 @@ Netlify Build
 [33m⠙[39m No cached functions were found
 [33m⠙[39m Finished hashing 
 [33m⠋[39m CDN diffing files...
-[33m⠙[39m CDN requesting 0 files
-[33m⠋[39m Uploading 0 files
-[33m⠙[39m Finished uploading 0 assets
+[33m⠙[39m CDN requesting 1 files
+[33m⠋[39m Uploading 1 files
+[33m⠙[39m Finished uploading 1 assets
 [33m⠋[39m Waiting for deploy to go live...
 [33m⠙[39m Deploy is live!
 
-Build logs:         https://app.netlify.com/sites/devvvops/deploys/67eba7575fb8d1b98dc02249
+Build logs:         https://app.netlify.com/sites/devvvops/deploys/67ebb03df790fa0410c1aa5d
 Function logs:      https://app.netlify.com/sites/devvvops/logs/functions
 Edge function Logs: https://app.netlify.com/sites/devvvops/logs/edge-functions
-Unique deploy URL:  https://67eba7575fb8d1b98dc02249--devvvops.netlify.app
+Unique deploy URL:  https://67ebb03df790fa0410c1aa5d--devvvops.netlify.app
 Website URL:        https://devvvops.netlify.app
 [Pipeline] }
 [Pipeline] // script
@@ -231,8 +230,8 @@ Post stage
 [Pipeline] echo
 👉 เปิดเว็บไซต์ที่: https://devvvops.netlify.app
 [Pipeline] }
-$ docker stop --time=1 75b41c805135e9668bb58e5f856fe85af1a6ab566529a72dcaca0e7463c57567
-$ docker rm -f --volumes 75b41c805135e9668bb58e5f856fe85af1a6ab566529a72dcaca0e7463c57567
+$ docker stop --time=1 f5c026bbc5c3c7572357670b2aa10650a4175a29eebc1d45a47f5406c457c306
+$ docker rm -f --volumes f5c026bbc5c3c7572357670b2aa10650a4175a29eebc1d45a47f5406c457c306
 [Pipeline] // withDockerContainer
 [Pipeline] }
 [Pipeline] // stage
@@ -254,10 +253,10 @@ Fetching upstream changes from https://github.com/PiyathidaK145/DevOps.git
  > git --version # 'git version 2.39.5'
  > git fetch --tags --force --progress -- https://github.com/PiyathidaK145/DevOps.git +refs/heads/*:refs/remotes/origin/* # timeout=10
  > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
-Checking out Revision 552480d8b2abad2f5570b1bfa228d8593c0a037e (refs/remotes/origin/main)
+Checking out Revision c49ac8bd1b0ecd0896b7504c4d3adbc44f681133 (refs/remotes/origin/main)
  > git config core.sparsecheckout # timeout=10
- > git checkout -f 552480d8b2abad2f5570b1bfa228d8593c0a037e # timeout=10
-Commit message: "update"
+ > git checkout -f c49ac8bd1b0ecd0896b7504c4d3adbc44f681133 # timeout=10
+Commit message: "ีupdate เสจแว้ววววว"
 [Pipeline] withEnv
 [Pipeline] {
 [Pipeline] script
@@ -283,28 +282,28 @@ Post stage
 + cat resource_report.txt
 Top 10 processes by memory usage:
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-jenkins      7  9.4 30.2 8420080 607152 ?      Sl   08:20   2:12 java -Duser.home=/var/jenkins_home -Djenkins.model.Jenkins.slaveAgentPort=50000 -Dhudson.lifecycle=hudson.lifecycle.ExitLifecycle -jar /usr/share/jenkins/jenkins.war
-jenkins   2860  0.0  0.2   8484  4288 ?        R    08:44   0:00 ps aux --sort=-%mem
-jenkins   2861  0.0  0.0   2912  1524 ?        S    08:44   0:00 head -n 10
-jenkins   2858  0.0  0.0   2576  1516 ?        S    08:44   0:00 sh -xe /var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/script.sh.copy
-jenkins   2862  0.0  0.0   2904  1476 ?        S    08:44   0:00 sleep 3
-jenkins   2855  0.0  0.0   2576   616 ?        S    08:44   0:00 sh -c (cp '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/script.sh' '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/script.sh.copy'; { while [ -d '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3' -a \! -f '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/jenkins-result.txt' ]; do touch '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/jenkins-log.txt'; sleep 3; done } & jsc=durable-be10ef46a25e7373539a38de131b769561c80c18e7cbe2d9e21c24872ed2895c; JENKINS_SERVER_COOKIE=$jsc 'sh' -xe  '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/script.sh.copy' > '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/jenkins-log.txt' 2>&1; echo $? > '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/jenkins-result.txt.tmp'; mv '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/jenkins-result.txt.tmp' '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/jenkins-result.txt'; wait) >&- 2>&- &
-jenkins   2857  0.0  0.0   2576   448 ?        S    08:44   0:00 sh -c (cp '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/script.sh' '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/script.sh.copy'; { while [ -d '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3' -a \! -f '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/jenkins-result.txt' ]; do touch '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/jenkins-log.txt'; sleep 3; done } & jsc=durable-be10ef46a25e7373539a38de131b769561c80c18e7cbe2d9e21c24872ed2895c; JENKINS_SERVER_COOKIE=$jsc 'sh' -xe  '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/script.sh.copy' > '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/jenkins-log.txt' 2>&1; echo $? > '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/jenkins-result.txt.tmp'; mv '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/jenkins-result.txt.tmp' '/var/jenkins_home/workspace/devopss@2@tmp/durable-861efdb3/jenkins-result.txt'; wait) >&- 2>&- &
+jenkins      7  4.1 30.6 8416996 616120 ?      Sl   08:20   2:31 java -Duser.home=/var/jenkins_home -Djenkins.model.Jenkins.slaveAgentPort=50000 -Dhudson.lifecycle=hudson.lifecycle.ExitLifecycle -jar /usr/share/jenkins/jenkins.war
+jenkins   3583  0.0  0.2   8484  4428 ?        R    09:22   0:00 ps aux --sort=-%mem
+jenkins   3584  0.0  0.0   2904  1580 ?        S    09:22   0:00 sleep 3
+jenkins   3585  0.0  0.0   2912  1552 ?        S    09:22   0:00 head -n 10
+jenkins   3581  0.0  0.0   2576  1516 ?        S    09:22   0:00 sh -xe /var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/script.sh.copy
+jenkins   3578  0.0  0.0   2576   608 ?        S    09:22   0:00 sh -c (cp '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/script.sh' '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/script.sh.copy'; { while [ -d '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e' -a \! -f '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/jenkins-result.txt' ]; do touch '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/jenkins-log.txt'; sleep 3; done } & jsc=durable-be10ef46a25e7373539a38de131b769561c80c18e7cbe2d9e21c24872ed2895c; JENKINS_SERVER_COOKIE=$jsc 'sh' -xe  '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/script.sh.copy' > '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/jenkins-log.txt' 2>&1; echo $? > '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/jenkins-result.txt.tmp'; mv '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/jenkins-result.txt.tmp' '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/jenkins-result.txt'; wait) >&- 2>&- &
+jenkins   3580  0.0  0.0   2576   420 ?        S    09:22   0:00 sh -c (cp '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/script.sh' '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/script.sh.copy'; { while [ -d '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e' -a \! -f '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/jenkins-result.txt' ]; do touch '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/jenkins-log.txt'; sleep 3; done } & jsc=durable-be10ef46a25e7373539a38de131b769561c80c18e7cbe2d9e21c24872ed2895c; JENKINS_SERVER_COOKIE=$jsc 'sh' -xe  '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/script.sh.copy' > '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/jenkins-log.txt' 2>&1; echo $? > '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/jenkins-result.txt.tmp'; mv '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/jenkins-result.txt.tmp' '/var/jenkins_home/workspace/devopss@2@tmp/durable-ba588f0e/jenkins-result.txt'; wait) >&- 2>&- &
 jenkins      1  0.0  0.0   2472   376 ?        Ss   08:20   0:00 /usr/bin/tini -- /usr/local/bin/jenkins.sh
 
 Memory usage:
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       1.3Gi       239Mi        12Ki       616Mi       671Mi
-Swap:          1.0Gi       153Mi       870Mi
+Mem:           1.9Gi       1.3Gi       240Mi        12Ki       621Mi       678Mi
+Swap:          1.0Gi       159Mi       864Mi
 
 System performance stats (vmstat):
 procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
  r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
- 1  1 157320 245188  47496 583616    2    3    28    62  110  147  1  0 98  0  0
- 1  0 157320 245188  47496 583616    0    0     0   136  596  771  0  0 100  0  0
- 1  0 157320 245188  47496 583616    0    0     0     0 1360 2240  0  0 100  0  0
- 1  0 157320 245188  47496 583616    0    0     8     0  741 1038  0  0 100  0  0
- 1  0 157320 245188  47496 583616    0    0     0     0  393  458  0  0 100  0  0
+ 1  1 163112 246524  51576 584660    1    2    22    47   98  132  1  0 99  0  0
+ 1  0 163112 246524  51576 584660    0    0     0   140 1006 1337  1  0 99  0  0
+ 1  0 163112 246524  51576 584660    0    0     0     0 2273 2996  4  0 96  0  0
+ 1  0 163112 246524  51576 584660    0    0     0     0  657  858  0  0 100  0  0
+ 1  0 163112 246524  51576 584660    0    0     0     0  683  807  0  0 100  0  0
 [Pipeline] }
 [Pipeline] // withEnv
 [Pipeline] }
