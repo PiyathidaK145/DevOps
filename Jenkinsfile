@@ -76,7 +76,7 @@ pipeline {
             post {
                 success {
                     echo "✅ Deployment Successful! 🎉"
-                    echo "👉 เปิดเว็บไซต์ที่: https://nicevanitermproject.netlify.app"
+                    echo "👉 เปิดเว็บไซต์ที่: https://devvvops.netlify.app"
                 }
                 failure {
                     echo "❌ Deployment Failed! Check logs for details."
