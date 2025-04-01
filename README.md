@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TermProjectDevOps
 
 This project is a web application built using **React** for the front-end, **Node.js** for the back-end, and deployed using **Netlify**. It also includes Continuous Integration/Continuous Deployment (CI/CD) using **Jenkins**.
@@ -146,3 +147,6 @@ Thanks to Jenkins for automating the CI/CD pipeline.
 
 
 
+=======
+# DevOps
+>>>>>>> 153f4d10059e4dc298b0c01d4cd594e655e3ba54
