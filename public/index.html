@@ -1,95 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to our amazing app. Sign up today and start experiencing the best services we have to offer.">
-    <title>My Awesome App</title>
+    <title>Food Paradise</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .food-item {
+            margin: 15px 0;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
     <header>
-        <div class="navbar">
-            <a href="/" class="logo">MyAwesomeApp</a>
-            <nav>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#signup" class="cta-button">Sign Up</a></li>
-                </ul>
-            </nav>
-        </div>
+        Food Paradise - อาหารแสนอร่อย
     </header>
-
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to My Awesome App</h1>
-            <p>Your journey to simplicity and success starts here. Join thousands of users who trust us to make their life easier.</p>
-            <a href="#signup" class="cta-button">Get Started</a>
+    <div class="container">
+        <div class="food-item">
+            <h2>ส้มตำไทย</h2>
+            <img src="somtam.jpg" alt="ส้มตำไทย">
+            <p>รสชาติแซ่บ อร่อยถึงใจ</p>
         </div>
-    </section>
-
-    <section id="features" class="features-section">
-        <h2>Features</h2>
-        <div class="features-container">
-            <div class="feature">
-                <h3>Fast & Secure</h3>
-                <p>Experience lightning-fast speeds with top-notch security to keep your data safe.</p>
-            </div>
-            <div class="feature">
-                <h3>User-Friendly</h3>
-                <p>Our app is designed to be intuitive and easy to use, so you can get started without any hassle.</p>
-            </div>
-            <div class="feature">
-                <h3>24/7 Support</h3>
-                <p>Need help? Our team is available around the clock to assist you with any questions or issues.</p>
-            </div>
+        <div class="food-item">
+            <h2>ผัดไทยกุ้งสด</h2>
+            <img src="padthai.jpg" alt="ผัดไทยกุ้งสด">
+            <p>เส้นเหนียวนุ่ม ซอสเข้มข้น</p>
         </div>
-    </section>
-
-    <section id="pricing" class="pricing-section">
-        <h2>Pricing</h2>
-        <div class="pricing-container">
-            <div class="pricing-plan">
-                <h3>Free Plan</h3>
-                <p>Perfect for individuals and small projects.</p>
-                <p><strong>$0/month</strong></p>
-                <a href="#signup" class="cta-button">Sign Up</a>
-            </div>
-            <div class="pricing-plan">
-                <h3>Pro Plan</h3>
-                <p>For businesses and teams who need extra features.</p>
-                <p><strong>$9.99/month</strong></p>
-                <a href="#signup" class="cta-button">Sign Up</a>
-            </div>
-            <div class="pricing-plan">
-                <h3>Enterprise Plan</h3>
-                <p>For large enterprises with special requirements.</p>
-                <p><strong>$49.99/month</strong></p>
-                <a href="#signup" class="cta-button">Sign Up</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or want to learn more, feel free to reach out!</p>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="cta-button">Send Message</button>
-        </form>
-    </section>
-
+    </div>
     <footer>
-        <p>&copy; 2025 MyAwesomeApp. All rights reserved.</p>
+        &copy; 2025 Food Paradise | อร่อยทุกคำ
     </footer>
-
-    <script src="app.js"></script>
 </body>
-
 </html>
